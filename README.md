@@ -44,12 +44,12 @@ This project implements a simple ticket service. Ticket service provides the fol
 
 ​	Java JDK:  version 1.8.0_152
 
-​        Build and run scripts are written for Windows-based systems.
+​ Build and run scripts are written for Windows-based systems. Open DOS command prompt and cd to 'booking' folder
 
-​		build.bat
+​		  build.bat
 
-​		run.bat 
+​		  run.bat 
 
-​        APIs can be tested with Postman, please import file:  
+​ APIs can be tested with Postman, please import file:  
 
-​		testbookingcollection.postman_collection.json
+​		  testbookingcollection.postman_collection.json
