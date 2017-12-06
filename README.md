@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##### **Project Description**
 
 This project implements a simple ticket service. Ticket service provides the following functions:
@@ -62,3 +63,7 @@ This project implements a simple ticket service. Ticket service provides the fol
 
 
 
+=======
+# booking
+Sample ticket booking service implemented with Spring Boot REST service
+>>>>>>> b45b9f3b9a30bbb22b02cf50eef6a1cb18849c3e
