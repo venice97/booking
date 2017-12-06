@@ -1,0 +1,97 @@
+{
+	"info": {
+		"name": "testbookingcollection",
+		"_postman_id": "f5533aa9-c141-2168-969a-d72f215c6c86",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "totalAvailable request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9000/booking/totalAvailable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"booking",
+						"totalAvailable"
+					]
+				},
+				"description": "Return the current available number of seats"
+			},
+			"response": []
+		},
+		{
+			"name": "hold request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numSeats\": \"20\",\r\n    \"customerEmail\": \"foobar@yahoo.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/booking/hold",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"booking",
+						"hold"
+					]
+				},
+				"description": "Hold number of tickets per email address"
+			},
+			"response": []
+		},
+		{
+			"name": "reserve request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"seatHoldId\": \"HD-9c449935-d50b-42fe-9534-5095c4658e35\",\n    \"customerEmail\": \"foobar@yahoo.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/booking/reserve",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"booking",
+						"reserve"
+					]
+				},
+				"description": "Reserve a seat hold id per email address"
+			},
+			"response": []
+		}
+	]
+}
